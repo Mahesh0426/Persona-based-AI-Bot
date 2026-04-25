@@ -6,7 +6,9 @@ import TypingIndicator from "./components/TypingIndicator";
 import MyPic from "./assets/mahesh.png";
 
 function App() {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    { role: "bot", content: "Hi there! I am a clone of Mahesh Kunwar. How are you doing today? 👋" }
+  ]);
   const [inputText, setInputText] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
